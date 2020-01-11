@@ -59,6 +59,25 @@ base16-manager set solarized-dark
 base16_solarized-dark
 ```
 
+# OMZ
+
+```
+curl -L git.io/antigen > antigen.zsh
+```
+
+# Misc
+
+```
+brew install autojump
+brew install fd
+brew install thefuck
+
+# go
+curl -sSL https://git.io/g-install | sh -s
+go get -u github.com/alecthomas/chroma/cmd/chroma
+
+```
+
 # References
 
 - https://www.atlassian.com/git/tutorials/dotfiles

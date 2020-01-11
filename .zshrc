@@ -105,3 +105,46 @@ BASE16_SHELL="$HOME/.base16-manager/chriskempson/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+source $HOME/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle pip
+antigen bundle bundler
+antigen bundle command-not-found
+antigen bundle kubectl
+antigen bundle wting/autojump
+antigen bundle colored-man-pages
+antigen bundle colorize
+antigen bundle common-aliases
+antigen bundle copybuffer
+antigen bundle copydir
+antigen bundle copyfile
+antigen bundle docker-compose
+antigen bundle docker
+antigen bundle encode64
+antigen bundle fd
+antigen bundle golang
+antigen bundle helm
+antigen bundle history
+antigen bundle per-directory-history
+antigen bundle rails
+antigen bundle redis-cli
+antigen bundle terraform
+antigen bundle thefuck
+antigen bundle tmux
+antigen bundle vi-mode
+antigen bundle zsh_reload
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Tell Antigen that you're done.
+antigen apply
+
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
+
+export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+
+eval $(thefuck --alias)
