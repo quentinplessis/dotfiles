@@ -8,7 +8,7 @@ source $HOME/.bashrc
 
 Clone
 ```
-git clone --bare https://github.com/quentinplessis/dot_files $HOME/.cfg
+git clone --bare https://github.com/quentinplessis/dotfiles.git $HOME/.cfg
 ```
 
 Backup current config
