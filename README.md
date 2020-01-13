@@ -72,6 +72,10 @@ brew install autojump
 brew install fd
 brew install thefuck
 brew install fzf
+brew tap sambadevi/powerlevel9k
+brew install powerlevel9k
+brew tap homebrew/cask-fonts
+brew cask install font-hack-nerd-font
 
 # go
 curl -sSL https://git.io/g-install | sh -s
@@ -79,6 +83,11 @@ go get -u github.com/alecthomas/chroma/cmd/chroma
 
 # vim
 go get -u github.com/jstemmer/gotags
+
+# powerlevel9k
+git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+p10k configure
 ```
 
 # Vim
