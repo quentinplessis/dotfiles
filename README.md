@@ -71,11 +71,20 @@ curl -L git.io/antigen > antigen.zsh
 brew install autojump
 brew install fd
 brew install thefuck
+brew install fzf
 
 # go
 curl -sSL https://git.io/g-install | sh -s
 go get -u github.com/alecthomas/chroma/cmd/chroma
 
+# vim
+go get -u github.com/jstemmer/gotags
+```
+
+# Vim
+
+```
+:GoInstallBinaries
 ```
 
 # References

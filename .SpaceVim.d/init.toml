@@ -32,6 +32,9 @@
     bootstrap_before = "myspacevim#before"
     bootstrap_after = "myspacevim#after"
 
+    # Autocomplete
+    # autocomplete_method = "ycm"
+
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
@@ -42,3 +45,15 @@ auto-completion-tab-key-behavior = "cycle"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[[layers]]
+  name = "lang#go"
+
+[[layers]]
+  name = "lang#ruby"
+
+[[layers]]
+  name = "lang#dockerfile"
+
+[[layers]]
+  name = "tmux"

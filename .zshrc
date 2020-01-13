@@ -136,7 +136,7 @@ antigen bundle redis-cli
 antigen bundle terraform
 antigen bundle thefuck
 antigen bundle tmux
-antigen bundle vi-mode
+#antigen bundle vi-mode
 antigen bundle zsh_reload
 antigen bundle zsh-users/zsh-syntax-highlighting
 
