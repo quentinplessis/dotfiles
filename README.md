@@ -62,6 +62,7 @@ base16_solarized-dark
 # OMZ
 
 ```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 curl -L git.io/antigen > antigen.zsh
 ```
 
