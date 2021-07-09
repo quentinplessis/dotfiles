@@ -15,7 +15,7 @@
     colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
-    enable_guicolors = false
+    enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "nil"
@@ -55,8 +55,21 @@ default_height = 30
 [[layers]]
   name = "lang#dockerfile"
 
+
+[[layers]]
+  name = "lang#extra"
+
 [[layers]]
   name = "tmux"
 
 [[layers]]
   name = "VersionControl"
+
+[[custom_plugins]]
+name = 'junegunn/vim-easy-align'
+
+[[custom_plugins]]
+name = 'jparise/vim-graphql'
+
+[[custom_plugins]]
+name = 'tpope/vim-abolish'

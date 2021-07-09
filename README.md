@@ -81,8 +81,12 @@ brew cask install font-hack-nerd-font
 # go
 curl -sSL https://git.io/g-install | sh -s
 go get -u github.com/alecthomas/chroma/cmd/chroma
+brew install golangci/tap/golangci-lint
+brew upgrade golangci/tap/golangci-lint
 
 # vim
+brew install vim
+
 go get -u github.com/jstemmer/gotags
 
 # powerlevel9k
