@@ -1,0 +1,12 @@
+package aws
+package bang-bang
+package config
+package https://github.com/jethrokuan/fzf
+package https://github.com/jhillyerd/plugin-git
+package peco
+package spark
+package thefuck
+package weather
+package z
+theme bobthefish
+theme default
