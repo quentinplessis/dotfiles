@@ -29,6 +29,7 @@ brew "fzf"
 brew "rg"
 brew "jq"
 brew "git-lfs"
+brew "watch"
 
 # --- dev ----
 brew "ruby-build" # for rbenv
