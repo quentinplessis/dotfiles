@@ -21,6 +21,7 @@ alias tkss='tmux -2 kill-session -t'
 
 # Terraform
 alias tf='terraform'
+set -xg TF_PLUGIN_CACHE_DIR "$HOME/.terraform.d/plugin-cache"
 
 # Fish
 set -g theme_color_scheme gruvbox
@@ -55,10 +56,11 @@ set -x NODENV_ROOT "$HOME/.anyenv/envs/nodenv"
 set -x PATH "$HOME/.anyenv/envs/nodenv/bin" $PATH
 eval (nodenv init - | source)
 
-# fix path
-fix_path
-
 # thefuck
 thefuck --alias | source
 
-export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+# direnv
+direnv hook fish | source
+
+# fix path
+fix_path
