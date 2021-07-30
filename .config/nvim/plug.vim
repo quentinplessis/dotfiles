@@ -31,6 +31,7 @@ if has("nvim")
   Plug 'crispgm/nvim-go'
   Plug 'tpope/vim-commentary'
   Plug 'morhetz/gruvbox'
+  Plug 'towolf/vim-helm'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

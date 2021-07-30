@@ -30,6 +30,8 @@ brew "rg"
 brew "jq"
 brew "git-lfs"
 brew "watch"
+brew "colordiff"
+brew "gh"
 
 # --- dev ----
 brew "ruby-build" # for rbenv
@@ -39,6 +41,7 @@ brew "direnv"
 
 # ---- aws ----
 brew "awscli"
+brew "cybozu/assam/assam"
 
 # ---- ops ----
 brew "git-crypt"
@@ -52,6 +55,8 @@ brew "golangci-lint"
 # ---- api ----
 cask "bloomrpc"
 brew "siege"
+brew "grpcurl"
+brew "ghz"
 
 # ---- DB ----
 brew "postgresql" # PostgreSQL
