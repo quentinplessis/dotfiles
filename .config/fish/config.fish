@@ -41,6 +41,7 @@ pyenv init - | source
 set -x GOENV_ROOT "$HOME/.anyenv/envs/goenv"
 set -x PATH "$HOME/.anyenv/envs/goenv/bin" $PATH
 set -x PATH "$HOME/.anyenv/envs/goenv/shims" $PATH
+status --is-interactive; and source (goenv init -|psub)
 
 # tfenv
 set -x TFENV_ROOT "$HOME/.anyenv/envs/tfenv"
