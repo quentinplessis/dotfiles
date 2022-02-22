@@ -220,7 +220,7 @@ require('vim.lsp.protocol').CompletionItemKind = {
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { "bashls", "yamlls", "sqlls", "gopls", "graphql", "terraformls" }
+local servers = { "bashls", "yamlls", "sqlls", "terraformls" }
 
 for _, lsp in ipairs(servers) do
   nvim_lsp[lsp].setup {
@@ -230,6 +230,22 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+nvim_lsp.gopls.setup {
+  on_attach = on_attach,
+  flags = {
+    debounce_text_changes = 150,
+  },
+  cmd = {'gopls','--remote=auto'},
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+    },
+  },
+}
 
 nvim_lsp.jsonls.setup {
     on_attach = on_attach,
@@ -245,14 +261,23 @@ nvim_lsp.jsonls.setup {
     }
 }
 
-nvim_lsp.diagnosticls.setup {}
-
-require'lspconfig'.tflint.setup{
-  filetypes = {
-		"terraform",
-		"tf"
-  }
+nvim_lsp.graphql.setup {
+  on_attach = on_attach,
+  flags = {
+    debounce_text_changes = 150,
+  },
+  filetypes = { 'graphql', 'graphqls' },
 }
+
+nvim_lsp.tflint.setup {
+  on_attach = on_attach,
+  flags = {
+    debounce_text_changes = 150,
+  },
+  filetypes = { 'terraform', 'tf' },
+}
+
+nvim_lsp.diagnosticls.setup {}
 EOF
 
 " lspsaga

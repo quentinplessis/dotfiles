@@ -34,12 +34,13 @@ set -gx PATH $HOME/.anyenv/bin $PATH
 # pyenv 
 set -x PYENV_ROOT "$HOME/.anyenv/envs/pyenv"
 set -x PATH "$HOME/.anyenv/envs/pyenv/bin" $PATH
-eval (pyenv init - | source)
+status is-interactive; and pyenv init --path | source
+pyenv init - | source
 
 # goenv
 set -x GOENV_ROOT "$HOME/.anyenv/envs/goenv"
 set -x PATH "$HOME/.anyenv/envs/goenv/bin" $PATH
-eval (goenv init - | source)
+set -x PATH "$HOME/.anyenv/envs/goenv/shims" $PATH
 
 # tfenv
 set -x TFENV_ROOT "$HOME/.anyenv/envs/tfenv"
@@ -64,3 +65,6 @@ direnv hook fish | source
 
 # fix path
 fix_path
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/google-cloud-sdk/path.fish.inc' ]; . '$HOME/google-cloud-sdk/path.fish.inc'; end

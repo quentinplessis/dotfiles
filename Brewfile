@@ -42,6 +42,8 @@ brew "direnv"
 # ---- aws ----
 brew "awscli"
 brew "cybozu/assam/assam"
+tap "aws/tap"
+brew "aws-sam-cli"
 
 # ---- ops ----
 brew "git-crypt"

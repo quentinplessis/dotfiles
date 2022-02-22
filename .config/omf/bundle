@@ -4,10 +4,13 @@ package config
 package https://github.com/blackjid/plugin-kubectl
 package https://github.com/jethrokuan/fzf
 package https://github.com/jhillyerd/plugin-git
+package https://github.com/sujaybokil/fish-gruvbox
 package peco
 package spark
 package thefuck
 package weather
 package z
+theme ays
 theme bobthefish
+theme boxfish
 theme default
