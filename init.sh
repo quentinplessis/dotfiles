@@ -14,8 +14,8 @@ brew bundle
 if [ "$fish_already_setup" = '0' ]; then
   # Set fish as default shell
   echo "Ensures fish is default shell"
-  echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
-  chsh -s /usr/local/bin/fish
+  echo /opt/homebrew/bin/fish | sudo tee -a /etc/shells
+  chsh -s /opt/homebrew/bin/fish
 
   # Install Oh My Fish
   echo "Install Oh My Fish"
@@ -37,6 +37,10 @@ anyenv install pyenv # Python
 anyenv install rbenv # Ruby
 anyenv install tfenv # Terraform
 anyenv install nodenv # Node
+
+# Node
+nodenv install 16.14.0
+nodenv global 16.14.0
 
 # TODO: package.json
 npm install -g graphql-language-service-cli

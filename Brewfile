@@ -46,10 +46,10 @@ tap "aws/tap"
 brew "aws-sam-cli"
 
 # ---- ops ----
-brew "git-crypt"
 tap "hashicorp/tap"
 brew "terraform-ls"
 brew "tflint"
+brew "sops"
 
 # ---- Golang ----
 brew "golangci-lint"
@@ -62,3 +62,5 @@ brew "ghz"
 
 # ---- DB ----
 brew "postgresql" # PostgreSQL
+brew "mysql" # MySQL
+brew "redis" # Redis

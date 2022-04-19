@@ -1,5 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+    eval (/opt/homebrew/bin/brew shellenv)
 end
 
 # Alias
@@ -58,14 +59,18 @@ set -x NODENV_ROOT "$HOME/.anyenv/envs/nodenv"
 set -x PATH "$HOME/.anyenv/envs/nodenv/bin" $PATH
 eval (nodenv init - | source)
 
+# aws
+# Enable AWS CLI autocompletion: github.com/aws/aws-cli/issues/1079
+complete --command aws --no-files --arguments '(begin; set --local --export COMP_SHELL fish; set --local --export COMP_LINE (commandline); aws_completer | sed \'s/ $//\'; end)'
+
 # thefuck
 thefuck --alias | source
 
 # direnv
 direnv hook fish | source
 
+# gcloud
+source $HOME/google-cloud-sdk/path.fish.inc
+
 # fix path
 fix_path
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.fish.inc' ]; . '$HOME/google-cloud-sdk/path.fish.inc'; end
