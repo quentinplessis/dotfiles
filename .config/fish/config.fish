@@ -68,7 +68,7 @@ complete --command aws --no-files --arguments '(begin; set --local --export COMP
 direnv hook fish | source
 
 # gcloud
-source $HOME/google-cloud-sdk/path.fish.inc
+if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]; . "$HOME/google-cloud-sdk/path.fish.inc"; end
 
 # kubectl
 source ~/.kubectl_aliases

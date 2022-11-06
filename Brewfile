@@ -14,6 +14,7 @@ brew "fish"
 brew "tmux"
 tap "homebrew/cask-fonts"
 cask "font-hack"
+cask "font-hack-nerd-font"
 
 # ---- Neovim ----
 brew "neovim"
@@ -21,6 +22,7 @@ brew "luajit"
 
 # ---- utility ----
 brew "wget"
+brew "grep"
 brew "peco"
 brew "lazygit"
 brew "autojump"
