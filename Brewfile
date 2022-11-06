@@ -28,18 +28,29 @@ brew "thefuck"
 brew "fzf"
 brew "rg"
 brew "jq"
+brew "yq"
 brew "git-lfs"
 brew "watch"
 brew "colordiff"
 brew "gh"
 brew "bat"
 brew "diff-so-fancy"
+brew "age"
+brew "openssl@3"
+brew "shellcheck"
+brew "coreutils"
+brew "moreutils"
+brew "gomplate"
+brew "task"
+brew "telnet"
+brew "tree"
 
 # --- dev ----
 brew "ruby-build" # for rbenv
 brew "node-build" # for nodenv
 brew "anyenv"
 brew "direnv"
+brew "logcli"
 
 # ---- aws ----
 brew "awscli"
@@ -53,14 +64,16 @@ brew "terraform-ls"
 brew "tflint"
 brew "sops"
 
-# ---- Golang ----
-brew "golangci-lint"
-
 # ---- api ----
 cask "bloomrpc"
 brew "siege"
 brew "grpcurl"
 brew "ghz"
+
+# ---- k8s ----
+brew "kubectl"
+brew "helm"
+brew "kubescape"
 
 # ---- DB ----
 brew "postgresql" # PostgreSQL
