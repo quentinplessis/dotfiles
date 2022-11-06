@@ -1,5 +1,6 @@
 package aws
 package bang-bang
+package bass
 package config
 package https://github.com/blackjid/plugin-kubectl
 package https://github.com/jethrokuan/fzf

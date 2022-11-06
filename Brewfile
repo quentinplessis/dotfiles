@@ -32,6 +32,8 @@ brew "git-lfs"
 brew "watch"
 brew "colordiff"
 brew "gh"
+brew "bat"
+brew "diff-so-fancy"
 
 # --- dev ----
 brew "ruby-build" # for rbenv

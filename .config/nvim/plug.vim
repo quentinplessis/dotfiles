@@ -34,6 +34,7 @@ if has("nvim")
   Plug 'towolf/vim-helm'
   Plug 'jparise/vim-graphql'
   Plug 'd0c-s4vage/vim-morph'
+  Plug 'mustache/vim-mustache-handlebars'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
