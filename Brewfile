@@ -46,6 +46,7 @@ brew "gomplate"
 brew "task"
 brew "telnet"
 brew "tree"
+brew "gpg"
 
 # --- dev ----
 brew "ruby-build" # for rbenv
