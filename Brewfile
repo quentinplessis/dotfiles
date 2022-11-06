@@ -54,6 +54,7 @@ brew "logcli"
 
 # ---- aws ----
 brew "awscli"
+tap "cybozu/assam"
 brew "cybozu/assam/assam"
 tap "aws/tap"
 brew "aws-sam-cli"
