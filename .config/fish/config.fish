@@ -64,14 +64,14 @@ eval (nodenv init - | source)
 # Enable AWS CLI autocompletion: github.com/aws/aws-cli/issues/1079
 complete --command aws --no-files --arguments '(begin; set --local --export COMP_SHELL fish; set --local --export COMP_LINE (commandline); aws_completer | sed \'s/ $//\'; end)'
 
-# thefuck
-thefuck --alias | source
-
 # direnv
 direnv hook fish | source
 
 # gcloud
 source $HOME/google-cloud-sdk/path.fish.inc
+
+# kubectl
+source ~/.kubectl_aliases
 
 # fix path
 fix_path
