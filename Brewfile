@@ -67,6 +67,7 @@ tap "hashicorp/tap"
 brew "terraform-ls"
 brew "tflint"
 brew "sops"
+brew "hcl2json" # sops script
 
 # ---- api ----
 cask "bloomrpc"
