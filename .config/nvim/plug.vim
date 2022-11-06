@@ -37,9 +37,6 @@ if has("nvim")
   Plug 'mustache/vim-mustache-handlebars'
 endif
 
-Plug 'groenewege/vim-less', { 'for': 'less' }
-Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
-
 call plug#end()
 
 lua << EOF
