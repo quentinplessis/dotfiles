@@ -233,6 +233,25 @@ require('lspconfig')['tflint'].setup{
     flags = lsp_flags,
     filetypes = { 'terraform', 'tf' },
 }
+
+if not require('lspconfig.configs').helm_ls then
+  require('lspconfig.configs').helm_ls = {
+    default_config = {
+      cmd = {"helm_ls", "serve"},
+      filetypes = {'helm'},
+      root_dir = function(fname)
+        return require('lspconfig.util').root_pattern('Chart.yaml')(fname)
+      end,
+    },
+  }
+end
+
+require('lspconfig')['helm_ls'].setup{
+    on_attach = on_attach,
+    flags = lsp_flags,
+    cmd = {'helm_ls','serve'},
+    filetypes = { 'helm' },
+}
 EOF
 
 " lspsaga
@@ -342,6 +361,9 @@ lua <<EOF
     capabilities = capabilities
   }
   require('lspconfig')['tflint'].setup {
+    capabilities = capabilities
+  }
+  require('lspconfig')['helm_ls'].setup {
     capabilities = capabilities
   }
 EOF

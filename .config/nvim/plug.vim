@@ -34,7 +34,6 @@ if has("nvim")
   Plug 'jparise/vim-graphql'
   Plug 'd0c-s4vage/vim-morph'
   Plug 'mustache/vim-mustache-handlebars'
-  Plug 'neovim/nvim-lspconfig'
   Plug 'hrsh7th/cmp-nvim-lsp'
   Plug 'hrsh7th/cmp-buffer'
   Plug 'hrsh7th/cmp-path'

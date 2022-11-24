@@ -47,6 +47,7 @@ brew "task"
 brew "telnet"
 brew "tree"
 brew "gpg"
+cask "devtoys"
 
 # --- dev ----
 brew "ruby-build" # for rbenv
@@ -66,6 +67,7 @@ brew "aws-sam-cli"
 tap "hashicorp/tap"
 brew "terraform-ls"
 brew "tflint"
+brew "git-crypt"
 brew "sops"
 brew "hcl2json" # sops script
 

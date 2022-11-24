@@ -39,8 +39,9 @@ anyenv install tfenv # Terraform
 anyenv install nodenv # Node
 
 # Node
-nodenv install 16.14.0
-nodenv global 16.14.0
+nodenv install 18.12.1
+nodenv global 18.12.1
+nodenv rehash
 
 # TODO: package.json
 npm install -g graphql-language-service-cli
