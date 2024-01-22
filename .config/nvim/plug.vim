@@ -41,6 +41,8 @@ if has("nvim")
   Plug 'hrsh7th/nvim-cmp'
   Plug 'hrsh7th/cmp-vsnip'
   Plug 'hrsh7th/vim-vsnip'
+  Plug 'skreuzer/vim-prometheus'
+  Plug 'github/copilot.vim'
 endif
 
 call plug#end()

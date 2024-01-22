@@ -72,6 +72,10 @@ if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]; . "$HOME/google-cloud-sdk/path
 
 # kubectl
 source ~/.kubectl_aliases
+set -xg USE_GKE_GCLOUD_AUTH_PLUGIN "true"
+
+# krew
+set -x PATH "$HOME/.krew/bin" $PATH
 
 # fix path
 fix_path
