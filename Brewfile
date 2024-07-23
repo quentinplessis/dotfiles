@@ -23,12 +23,12 @@ brew "luajit"
 # ---- utility ----
 brew "wget"
 brew "grep"
+brew "ripgrep"
 brew "peco"
 brew "lazygit"
 brew "autojump"
 brew "thefuck"
 brew "fzf"
-brew "rg"
 brew "jq"
 brew "yq"
 brew "git-lfs"
@@ -37,8 +37,9 @@ brew "colordiff"
 brew "gh"
 brew "bat"
 brew "diff-so-fancy"
+brew "diffutils"
 brew "age"
-brew "openssl@3"
+# brew "openssl@3"
 brew "shellcheck"
 brew "coreutils"
 brew "moreutils"
@@ -46,8 +47,8 @@ brew "gomplate"
 brew "task"
 brew "telnet"
 brew "tree"
-brew "gpg"
-cask "devtoys"
+brew "gnupg"
+cask "git-credential-manager"
 
 # --- dev ----
 brew "ruby-build" # for rbenv
@@ -58,31 +59,38 @@ brew "logcli"
 
 # ---- aws ----
 brew "awscli"
-tap "cybozu/assam"
-brew "cybozu/assam/assam"
 tap "aws/tap"
 brew "aws-sam-cli"
+
+# ---- azure ----
+brew "azure-cli"
 
 # ---- ops ----
 tap "hashicorp/tap"
 brew "terraform-ls"
 brew "tflint"
-brew "git-crypt"
 brew "sops"
 brew "hcl2json" # sops script
 
 # ---- api ----
-cask "bloomrpc"
 brew "siege"
+brew "grpc"
+brew "protobuf"
 brew "grpcurl"
+brew "grpcui"
 brew "ghz"
+brew "vegeta"
 
 # ---- k8s ----
-brew "kubectl"
+brew "kubernetes-cli"
 brew "helm"
-brew "kubescape"
 
 # ---- DB ----
 brew "postgresql" # PostgreSQL
 brew "mysql" # MySQL
 brew "redis" # Redis
+
+# ---- grafana ----
+tap "grafana/grafana"
+brew "grafana/grafana/cortextool"
+brew "mimirtool"
