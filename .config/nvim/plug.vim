@@ -43,6 +43,9 @@ if has("nvim")
   Plug 'hrsh7th/vim-vsnip'
   Plug 'skreuzer/vim-prometheus'
   Plug 'github/copilot.vim'
+  Plug 'hashivim/vim-terraform'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
+  Plug 'junegunn/vim-easy-align'
 endif
 
 call plug#end()

@@ -256,11 +256,11 @@ EOF
 
 " lspsaga
 
-lua << EOF
-local saga = require 'lspsaga'
+" lua << EOF
+" local saga = require 'lspsaga'
 
-saga.init_lsp_saga()
-EOF
+"   saga.init_lsp_saga()
+" EOF
 
 " show hover doc
 nnoremap <silent>K :Lspsaga hover_doc<CR>
