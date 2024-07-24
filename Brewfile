@@ -12,7 +12,6 @@ brew "fish"
 
 # ---- terminal ----
 brew "tmux"
-tap "homebrew/cask-fonts"
 cask "font-hack"
 cask "font-hack-nerd-font"
 

@@ -39,8 +39,8 @@ anyenv install tfenv # Terraform
 anyenv install nodenv # Node
 
 # Node
-nodenv install 18.12.1
-nodenv global 18.12.1
+nodenv install 20.15.1
+nodenv global 20.15.1
 nodenv rehash
 
 # TODO: package.json
